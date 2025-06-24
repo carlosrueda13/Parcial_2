@@ -1,4 +1,4 @@
 package com.parcial2.model;
 
-public class Usuario {
+public class User {
 }
