@@ -1,4 +1,5 @@
 package com.clinica.model;
+import com.clinica.common.UserType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,4 +12,5 @@ public class User {
     String name;
     String email;
     String password;
+    UserType tipo;
 }
