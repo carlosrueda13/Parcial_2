@@ -1,21 +1,18 @@
 package com.clinica.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.experimental.SuperBuilder;
-import java.util.List;
 
 @Data
 @SuperBuilder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @EqualsAndHashCode(callSuper=true)
-public class Doctor extends User implements UserInterface {
-    String specialty;
+public class Admin extends  User implements UserInterface{
     String username;
     String password;
-    List<Consult> consults;
 
     @Override
     public boolean login(String username, String password) {
@@ -27,7 +24,6 @@ public class Doctor extends User implements UserInterface {
         this.id = data.getId();
         this.name = data.getName();
         this.phone = data.getPhone();
-        this.specialty = data.getSpecialty();
         this.username = data.getUsername();
         this.password = data.getPassword();
     }
