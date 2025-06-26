@@ -1,17 +1,16 @@
 package com.clinica.model;
-import com.clinica.common.UserType;
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@SuperBuilder
 @Data
-public class User {
-    String id;
-    String name;
-    String phone;
-    UserType type;
+@SuperBuilder
+@NoArgsConstructor
+@AllArgsConstructor
+public abstract class User {
+    protected String id;
+    protected String name;
+    protected String phone;
 }
